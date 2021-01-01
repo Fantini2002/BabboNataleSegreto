@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.38;
+    text-align: center;
+}
+
+h1{
+    width: 100%;
+    font-size: 40px;
+    margin: 10px;
+    letter-spacing: 4px;
+}
+h2, h3{
+    margin: 5px;
+    width: 100%;
+}
+p{
+    text-align: center;
+}
+
+.cover{
+    height: auto;
+    min-height: 100%;
+    text-align: center;
+    display: flex;
+    background-image: url("/5LSA/media/sfondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover .action{
+    width: 85%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding: 15px;
+    background-color: rgba(230,230,230,0.8);
+    border: 6px solid #B52128;
+    border-radius: 40px;
+}
+
+.cover .action .center{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cover .action .center p{
+    width: 100%;
+}
+.cover .action .center .presentazione p{
+    text-align: justify;
+}
+
+.btn{
+    padding: 20px;
+    min-width: 150px;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    margin: 20px;
+    display: block;
+    transition: 0.2s;
+    box-shadow: 0 0 5px black;
+    color: white;
+    font-size: 18px;
+    background-color: #B52128;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-top: 15px;
+}
+.btn:hover{
+    background-color: #86191E;
+    border-color: #B52128;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+}
+
+/*----------------------------
+        CONTACT FORM
+----------------------------*/
+
+form{
+    width: 80%;
+    margin: auto;
+}
+label{
+    display: block;
+    padding: 13px 0 3px;
+}
+input, textarea{
+    border: 2px solid #B52128;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+input, textarea{
+    width: 97.5%;
+}
+.nome, .messaggio{
+    margin: 5px;
+}
+#form_button{
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px auto 20px;
+}
+
+@media(max-width: 855px){
+
+    .cover{
+        padding: 10px 0;
+    }
+    .cover .action .center{
+        justify-content: center;
+    }
+    .cover .action .center .testo{
+        width: 95%;
+    }
+    .cover .action .center p{
+        margin: 20px 0;
+    }
+
+    form{
+        width: 90%;
+    }
+    textarea{
+        width: 95%;
+    }
+    .nome, .cognome, .mail, .oggetto{
+        flex-basis: 100%;
+    }
+}
